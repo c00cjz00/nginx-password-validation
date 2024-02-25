@@ -21,7 +21,7 @@ proxy_pass https://td.nchc.org.tw/api/;
 docker run --name nginx_password \
 -p 80:80 \
 -v nginx-jwt-validatio/default.conf:/etc/nginx/conf.d/default.conf:ro \
--v nginx-password-validation/.htpasswd:/etc/nginx/conf.d/.htpasswd:ro \
+-v nginx-password-validation/.htpasswd:/etc/nginx/.htpasswd:ro \
 -d nginx
 ```
 
