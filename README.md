@@ -28,7 +28,7 @@ docker run --name nginx_password \
 5. Testing with curl
 - replace JWT_KEY below 
 ```
-curl -u $username:$password [http://](http://$NGINX_SERVER/api/v1)
+curl -u $username:$password http://$NGINX_SERVER/api/v1
 ```
 - output
 ```
